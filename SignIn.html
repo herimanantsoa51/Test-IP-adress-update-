@@ -1,0 +1,44 @@
+
+<!DOCTYPE html><html lang='fr'><head><meta charset='UTF-8'>;
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>;
+<title>Inscription</title>;
+<style>;
+body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; }
+.container { width: 80%; margin: 0 auto; background-color: hsla(86, 25%, 46%, 0.541); padding: 30px; 
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); margin-top: 50px; margin-bottom: 50px; border-radius: 10px; }
+h1 { text-align: center; color: #ffffff; margin-bottom: 30px; }
+header { text-align: left; margin-bottom: 20px; }
+h3 { text-align: center; color: #ffffff; margin-bottom: 10px; }
+.input-group { text-align: center; margin-bottom: 20px; }
+input[type='text'], input[type='password'] { font-size: large; padding: 10px; width: 40%; ;
+border: 1px solid #ccc; border-radius: 20px; }
+input[type='submit'] { background-color: #ffffff; color: #64a869; padding: 10px 20px; 
+border: none; border-radius: 20px; cursor: pointer; font-size: large; }
+input[type='submit']:hover { background-color: #5b9460; color: #ffffff; }
+</style>
+</head>
+<body background='img/back.jpg'>
+<form action='inscription.cgi' method='post'>
+<div class='container'>
+<header><img src='img/logo_mit.png' alt='Logo' /><h2>Inscription</h2></header>
+<div class='input-group'><h3>Nom</h3>
+    <input type='text' name='nom'>
+</div>
+<div class='input-group'><h3>Prenom</h3>
+    <input type='text' name='prenom'>
+</div>
+<div class='input-group'><h3>age</h3>
+    <input type='text' name='age'>
+</div>
+<div class='input-group'><h3>Login:</h3>
+<input type='text' name='login'></div>
+<div class='input-group'><h3>Mot de Passe:</h3>
+<input type='password' name='mdp1'></div>
+<div class='input-group'><h3>Confirmer le Mot de Passe:</h3>
+    <input type='password' name='mdp2'></div>
+<div class='input-group'><input type='submit' value='Envoyer'></div>
+<a href='log.cgi' style='text-align: end; color:#f0f0f0;font-size: medium;'>You have already an account?</a>
+</div>
+</form>
+</body>
+</html>
